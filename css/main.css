@@ -1,0 +1,42 @@
+header {
+    padding: 100px;
+}
+
+@media only screen and (min-width:1200px){
+.maincontainer{
+width: 1200px;
+}
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+
+    font-family: 'Raleway', sans-serif;
+
+    font-family: 'Roboto Slab', serif;
+}
+
+.box{
+    border: 1px solid #ccc;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+}
+
+.col{
+    flex-grow: 1;
+}
+
+@media only screen and (min-width:780px){
+    .row{
+        flex-direction: row;
+    }
+}
+
+.col1-3{
+    flex-grow: 1;
+}
+.col2-3{
+    flex-grow: 2;
+}
