@@ -127,8 +127,10 @@ li a:hover {
 
   li {
     float: none;   
-    text-align: center;
-    display: block;
+  }
+
+  li a{
+      text-align: center;
   }
   li a:hover {
     background-color: rgb(58, 57, 57);
