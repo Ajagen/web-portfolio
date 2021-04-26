@@ -128,9 +128,9 @@ li a:hover {
   li {
     float: none;   
     text-align: center;
+    display: inline-block;
   }
   li a:hover {
-      display: inline;
     background-color: rgb(58, 57, 57);
   }
 
