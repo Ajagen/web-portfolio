@@ -129,6 +129,10 @@ li a:hover {
     float: none;   
     text-align: center;
   }
+  li a:hover {
+      display: inline;
+    background-color: rgb(58, 57, 57);
+  }
 
 
 }
