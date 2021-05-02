@@ -23,9 +23,14 @@ body {
 .col p {
   text-indent: 50px;
   text-align: justify;
-  letter-spacing: 1px;
+  letter-spacing: 0.2px;
+  font-size: 15px;
 }
-
+h1{
+  font-size: 26px;
+  letter-spacing: 1px;
+  /* padding: 1px; */
+}
 
 .logo {
   margin: 0 auto;
@@ -94,6 +99,16 @@ li a:hover {
 .box1{
   padding: 10px 10px;
 }
+.box7{
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  align-items: center;
+  
+}
+.box7 p{
+  text-align: center;
+}
 
 /* *{
   box-sizing: border-box;
@@ -106,19 +121,6 @@ header::after {
   display: table;
   clear: both;
 }
-
-/* .box1 {
-  float: left;
-  width: 30%;
-  height: auto;
-  padding: 20px;
-} */
-/* .box2 {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  height: auto;
-} */
 
 .row {
   display: flex;
@@ -135,6 +137,13 @@ header::after {
   justify-content: center;
 
 }
+.col1-3 {
+  flex-grow: 1;
+}
+.col2-3 {
+  flex-grow: 6;
+}
+
 /* slide show frame */
 .slidershow{
   max-width: 800px;
@@ -156,9 +165,8 @@ header::after {
   width: 100%;
   height: 100%;
   animation: autoslide 15s infinite;
+  
   }
-
-/* slide show end */
 
 /* slide show animation */
 @keyframes autoslide{
@@ -185,11 +193,66 @@ header::after {
   }
 }
 
+.title{
+text-align: center;
+align-content: center;
+width: auto;
+margin: 0 auto;
+background-color: rgb(71, 75, 72);
+color: rgb(255, 255, 255);
+
+}
+
+.title p{
+  text-align: center;
+  align-content: center;
+  padding: 5;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:  rgb(71, 75, 72);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:  rgb(58, 57, 57);
+}
+
+/* .galery img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+} */
 
 /* For tablets: */
 @media only screen and (max-width: 768px) {
   .col {
     flex: 47%;
+  }
+  .col p {
+    text-indent: 30px;
+    letter-spacing: 0.2px;
+    font-size: 12px;
+  }
+  h1{
+    font-size: 18px;
   }
   ul {
     width: auto;
@@ -226,11 +289,24 @@ header::after {
     transition: 0.4s;
    
   }
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 /* For mobile phones */
 @media only screen and (max-width: 375px) {
   .col {
     flex: 100%;
+  }
+  .col p {
+    text-indent: 15px;
+    letter-spacing: 0.1px;
+    font-size: 11px;
+  }
+  h1{
+    font-size: 18px;
   }
   .nav {
     top: 35px;
@@ -243,13 +319,10 @@ header::after {
   li a:hover {
     background-color: rgb(58, 57, 57);
   }
-
-
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
-.col1-3 {
-  flex-grow: 1;
-}
-.col2-3 {
-  flex-grow: 6;
-}
