@@ -209,9 +209,9 @@ color: rgb(255, 255, 255);
   padding: 5;
 }
 
-video {
+iframe {
   width: 100%;
-  height: auto;
+  height: 450px;
 }
 /* Style inputs */
 input[type=text], select, textarea {
@@ -293,6 +293,10 @@ input[type=submit]:hover {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
   }
 }
 /* For mobile phones */
