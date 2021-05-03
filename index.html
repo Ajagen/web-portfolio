@@ -1,213 +1,261 @@
-<!doctype html>
+<!-- tag for html  -->
+<!DOCTYPE html>
+<!-- html language  -->
 <html lang="en">
-<head>
-  <!-- <meta charset="utf-8">
+  <head>
+    <!-- <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
-
-  <title>My MultiMedia Assignment</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500&family=Roboto+Slab&display=swap" rel="stylesheet"> 
-
-</head>
-<body>
-  <header>
-  <div class="maincontainer">
-    
-      <div class="logo">
-        <img src="images/Logo.svg" alt="logo"  />
-      </div>
-<div id="Home" class="headerimg">
-        <img src="images/20190202_184252.jpg" alt="sunset" class="responsivehdimg" width="1200" height="314"/>
-        <div class="text-block">
-          <h4 style="font-size:2vw;">Snorkeling</h4>
-          <p style="font-size:1.6vw;">Life looks better underwater</p>
+    <!-- title of the website  -->
+    <title>My MultiMedia Assignment</title>
+    <!-- set view port scale for mobile view  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reference to CSS file  -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- reference to google font link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- main container will contain all content in the different section  -->
+      <div class="maincontainer">
+        <!-- create class for logo  -->
+        <div class="logo">
+          <!-- import logo file as svg   -->
+          <img src="images/Logo.svg" alt="logo" />
+        </div>
+        <!-- create class heading image for header image and text  -->
+        <div id="Home" class="headerimg">
+          <!-- import image and set height and width  -->
+          <img
+            src="images/20190202_184252.jpg"
+            alt="sunset"
+            class="responsivehdimg"
+            width="1200"
+            height="314"
+          />
+          <!-- create another class to contain header text  -->
+          <div class="text-block">
+            <!-- set text to be responsive with scale view  -->
+            <h4 style="font-size: 2vw">Snorkeling</h4>
+            <p style="font-size: 1.6vw">Life looks better underwater</p>
+          </div>
+        </div>
+        <!-- create class for navigation bar  -->
+        <div class="nav">
+          <ul>
+            <!-- set navigation bar text and link reference  -->
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#photo">Photo</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-      <div class="nav">
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#photo">Photo</a></li>
-          <li><a href="#video">Video</a></li>
-          <li><a href="#Contact">Contact</a></li>
-        </ul>  
-      
-      </div>
-
-      </div>
     </header>
- 
 
-<main>
-<div class="maincontainer">
-  
-  <div class="row">
-    <div class="col col1-3">
-      <div class="box1"> 
-        <h1>Discover Mauritius Lagoon</h1>
-    <p>Mauritius is known for extensive and vibrant marine flora and fauna. In fact, Mauritius tour is half-hearted and incomplete, if you do not try snorkeling. Perfect for non-swimmers, this is an excellent opportunity to explore the blue ocean and see the beautiful fishes and other marine animals. Unlike many other islands of the World, where the water level has increased due to global warming, damaging the reefs and impacting the lives of marine creatures; Mauritius has got it preserved till now, thereby making up as an idyllic place for snorkeling and scuba diving.</p>
-    <p>The ocean is everything I want to be. Beautiful, mysterious, wild, and free.</p>
-      </div>
-    </div>
-    <div class="col col2-3">
-      <div class="box2"> 
+    <main>
+      <div class="maincontainer">
+        <!-- create row and col for layout structure  -->
+        <div class="row">
+          <!-- col and col1-3 has different parameter  -->
+          <div class="col col1-3">
+            <div class="box1">
+              <h1>Discover Mauritius Lagoon</h1>
+              <p>
+                Mauritius is known for extensive and vibrant marine flora and
+                fauna. In fact, Mauritius tour is half-hearted and incomplete,
+                if you do not try snorkeling. Perfect for non-swimmers, this is
+                an excellent opportunity to explore the blue ocean and see the
+                beautiful fishes and other marine animals. Unlike many other
+                islands of the World, where the water level has increased due to
+                global warming, damaging the reefs and impacting the lives of
+                marine creatures; Mauritius has got it preserved till now,
+                thereby making up as an idyllic place for snorkeling and scuba
+                diving.
+              </p>
+              <p>
+                The ocean is everything I want to be. Beautiful, mysterious,
+                wild, and free.
+              </p>
+            </div>
+          </div>
+          <div class="col col2-3">
+            <div class="box2">
+              <!-- create class for image slide show  -->
+              <div class="slidershow">
+                <div class="slides">
+                  <div class="slide">
+                    <img src="images/snorkel.jpg" alt="snorkel" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/lion-fish.jpg" alt="lion-fish" />
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="images/turtle-swimming.jpg"
+                      alt="turtle-swimming"
+                    />
+                  </div>
+                  <div class="slide">
+                    <img src="images/lemonde.jpg" alt="lemonde" />
+                  </div>
+                  <div class="slide">
+                    <img src="images/underwater-plant.jpg" alt="underwater" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- set id to class rowh to link with navigation bar  -->
+        <div id="photo" class="rowh">
+          <div class="colh">
+            <div class="box3 title">
+              <h1>My Photo</h1>
+            </div>
+          </div>
+        </div>
+        <!-- create class galery  -->
+        <div class="row galeryrow">
+          <!-- create and set photo in column  -->
+          <div class="col galery">
+            <!-- import photo  -->
+            <img src="images/me1.jpg" alt="me1" style="width: 100%" />
+            <img src="images/me4.jpg" alt="me4" style="width: 100%" />
+            <img src="images/me7.jpg" alt="me7" style="width: 100%" />
+            <img src="images/me11.jpg" alt="me11" style="width: 100%" />
+          </div>
+          <div class="col galery">
+            <img src="images/me3.jpg" alt="me3" style="width: 100%" />
+            <img src="images/me5.jpg" alt="me5" style="width: 100%" />
+            <img src="images/me10.jpg" alt="me10" style="width: 100%" />
+            <!-- <img src="images/lion-fish.jpg" style="width:100%"> -->
+          </div>
+          <div class="col galery">
+            <img src="images/me2.jpg" style="width: 100%" />
+            <img src="images/me6.jpg" style="width: 100%" />
+            <img src="images/me9.jpg" style="width: 100%" />
+            <img src="images/me8.jpg" style="width: 100%" />
+          </div>
+        </div>
 
-        <div class="slidershow">
+        <div id="video" class="rowh">
+          <div class="colh">
+            <div class="box4 title">
+              <h1>My Video</h1>
+            </div>
+          </div>
+        </div>
 
-          <div class="slides">
-            <div class="slide">
-              <img src="images/snorkel.jpg" alt="snorkel">
+        <div class="row">
+          <div class="col col1-3">
+            <div class="box1">
+              <h1>Discover West Coast</h1>
+              <p>
+                A wonderful day at flic en flac and albion. Nice spot at flic en flac is in front of police station and for albion in front of Club Med hotel. These two are my favorite 
+                spot for snorkeling.
+              </p>
             </div>
-            <div class="slide">
-              <img src="images/lion-fish.jpg" alt="lion-fish">
+          </div>
+          <div class="col col2-3">
+            <div class="box6">
+              <!-- link youtube video  -->
+              <iframe
+                src="https://www.youtube.com/embed/yp8jeEWFhv0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
-            <div class="slide">
-              <img src="images/turtle-swimming.jpg" alt="turtle-swimming">
+          </div>
+        </div>
+
+        <div id="Contact" class="rowh">
+          <div class="colh">
+            <div class="box4 title">
+              <h1>Contact</h1>
             </div>
-            <div class="slide">
-              <img src="images/lemonde.jpg" alt="lemonde">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="box7">
+              <h1>Contact Form</h1>
+              <p>
+                If ever you need furthur information or just want to share your
+                experience, you can leave a message. I will revert back asap.
+              </p>
             </div>
-            <div class="slide">
-              <img src="images/underwater-plant.jpg" alt="underwater">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="box1 footer">
+              <img src="images/contact.jpg" alt="Contact Me"  />
+            </div>
+          </div>
+          <div class="col">
+            <div class="box1">
+              <!-- create form  -->
+              <form action="">
+                <!-- label near text box  -->
+                <label for="fname">First Name</label>
+                <!-- create text box with placeholder  -->
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Your name.."
+                />
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Your last name.."
+                />
+                <label for="region">Region</label>
+                <!-- create drop down list -->
+                <select id="region" name="region">
+                  <option value="north">North</option>
+                  <option value="south">South</option>
+                  <option value="east">East</option>
+                  <option value="west">West</option>
+                  <option value="center">Center</option>
+                </select>
+                <label for="comments">Comments</label>
+                <textarea
+                  id="comments"
+                  name="comments"
+                  placeholder="Write something.."
+                  style="height: 170px"
+                ></textarea>
+                <!-- create a submit button  -->
+                <input type="submit" value="Submit" />
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </main>
 
-  <div id="photo" class="row">
-    <div class="col">
-      <div class="box3 title"> 
-        <h1>My Photo</h1>
-      </div>
-    </div>
-  </div>
-
-  <div class="row galeryrow">
-
-    <div  class="col galery">
-
-        <img src="images/me1.jpg" style="width: 100%;">
-        <img src="images/me4.jpg" style="width:100%">
-        <img src="images/me7.jpg" style="width:100%">
-        <img src="images/me11.jpg" style="width:100%">
-       
-    </div>
-    <div class="col galery">
-
-      <img src="images/me3.jpg" style="width:100%">
-      <img src="images/me5.jpg" style="width:100%">
-      <img src="images/me10.jpg" style="width:100%">
-      <!-- <img src="images/lion-fish.jpg" style="width:100%"> -->
-     
-      
-  </div>
-  <div class="col galery">
-
-    <img src="images/me2.jpg" style="width:100%">
-    <img src="images/me6.jpg" style="width:100%">
-    <img src="images/me9.jpg" style="width:100%">
-    <img src="images/me8.jpg" style="width:100%">
-  
-    
-</div>
-
-  </div>
-
-  <div id="video" class="row">
-    <div class="col">
-      <div class="box4 title"> 
-        <h1>My Video</h1>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col col1-3">
-      <div class="box1"> 
-        <H1> Albion</H1>
-      <p>A wonderful day at albion near the Club Med. It is a very nice spot for snorkeling.</p>
-      </div>
-    </div>
-    <div class="col col2-3">
-      <div class="box6"> 
-        <iframe src="https://www.youtube.com/embed/yp8jeEWFhv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-        
-      </div>
-    </div>
-  </div>
-
-  <div id="Contact" class="row">
-    <div class="col">
-      <div class="box4 title"> 
-        <h1>Contact</h1>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col">
-      <div class="box7"> 
-        <h1>Contact Form</h1>
-        <p>If ever you need furthur information or just want to share your experience, you can leave a message. I will revert back asap. </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col">
-      <div class="box1"> 
-        <img src="images/contact.jpg"/>
-      </div>
-    </div>
-    <div class="col">
-      <div class="box1"> 
-        <form action="">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="region">Region</label>
-          <select id="region" name="region">
-            <option value="north">North</option>
-            <option value="south">South</option>
-            <option value="east">East</option>
-            <option value="west">West</option>
-            <option value="center">Center</option>
-          </select>
-          <label for="comments">Comments</label>
-          <textarea id="comments" name="comments" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-      </div>
-    </div>
-  </div>
-
-</div>
-</main>
-
-
-<div class="maincontainer">
-  <footer>
-    <div class="row">
-      <div class="col">
-        <div class="box4 title"> 
-          <p>Copyright@Ajax</p>
+    <div class="maincontainer">
+      <footer>
+        <div class="rowh">
+          <div class="rowh">
+            <div class="boxend title">
+              <p>Copyright © Ajax Photography 2021</p>
+            </div>
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
-  
-  </footer>
-</div>
-
-
-
-
-</body>
+  </body>
 </html>

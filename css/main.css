@@ -1,37 +1,46 @@
+/* header section padding  */
 header {
   padding: 0;
 }
-
+/* set main contain to have a max width of 1200px  */
 @media only screen and (min-width: 1200px) {
   .maincontainer {
     width: 1200px;
     margin: 0 auto;
     /* drop shadow for maincontainer */
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
     /* cut top and bottom shadow */
     clip-path: inset(0px -15px 0px -15px);
   }
 }
-
+/* set font and backgroud color   */
 body {
+  background-color: rgba(71, 75, 72, 0.6);
+
   font-family: "Open Sans", sans-serif;
 
   font-family: "Raleway", sans-serif;
 
   font-family: "Roboto Slab", serif;
 }
+/* set backgroud color for main container  */
+.maincontainer {
+  background-color: rgb(255, 255, 255);
+}
+/* set text formatting for paragraph  */
 .col p {
   text-indent: 50px;
   text-align: justify;
   letter-spacing: 0.2px;
   font-size: 15px;
 }
-h1{
+/* set text formatting for heading 1  */
+h1 {
   font-size: 26px;
   letter-spacing: 1px;
   /* padding: 1px; */
 }
-
+/* set logo margin and max width  */
 .logo {
   margin: 0 auto;
   width: 100%;
@@ -42,7 +51,7 @@ h1{
 .headerimg {
   position: relative;
 }
-
+/* set auto resize header img  */
 .responsivehdimg {
   width: 100%;
   height: auto;
@@ -68,11 +77,11 @@ ul {
   overflow: hidden;
   background-color: rgb(71, 75, 72);
 }
-
+/* align on one row  */
 li {
   float: left;
 }
-
+/* set navigation bar to overlap header image  */
 .nav {
   position: relative;
   top: 50%;
@@ -80,40 +89,39 @@ li {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-
+/* navigation style format  */
 li a {
-  /* display: inline-block; */
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
-
+/* when cursor on change color  */
 li a:hover {
   background-color: rgb(58, 57, 57);
 }
-.box {
-  border: 1px solid #ccc;
-
-}
-.box1{
+/* set padding to box 1  */
+.box1 {
   padding: 10px 10px;
 }
-.box7{
+/* set alginment to box 7 */
+.box7 {
   text-align: center;
   padding: 0;
   margin: 0 auto;
   align-items: center;
-  
 }
-.box7 p{
+/* set text format center for box 7  */
+.box7 p {
   text-align: center;
 }
-
-/* *{
-  box-sizing: border-box;
-} */
-
+/* set style to footer bar and text  */
+.boxend {
+  text-align: center;
+  padding: 5px;
+  margin: 0 auto;
+  align-items: center;
+}
 
 /* Clear floats after the header*/
 header::after {
@@ -121,7 +129,7 @@ header::after {
   display: table;
   clear: both;
 }
-
+/* set row using flex display  */
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -129,14 +137,29 @@ header::after {
   align-items: center;
   justify-content: center;
 }
-
+/* create column size with flex  */
 .col {
   flex: 32%;
   padding: 0 2px;
   align-items: center;
   justify-content: center;
-
 }
+/* set section row style  */
+.roh {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0px;
+  align-items: center;
+  justify-content: center;
+}
+/* set section column row style  */
+.colh {
+  flex: 32%;
+  padding: 0 0px;
+  align-items: center;
+  justify-content: center;
+}
+/* set colomn width with flex  */
 .col1-3 {
   flex-grow: 1;
 }
@@ -144,77 +167,77 @@ header::after {
   flex-grow: 6;
 }
 
-/* slide show frame */
-.slidershow{
+/* create slide show frame */
+.slidershow {
   max-width: 800px;
   overflow: hidden;
 }
-
-.slides{
+/* set picture width and height in slides  */
+.slides {
   width: 500%;
   height: 100%;
   display: flex;
 }
-
-.slide{
+/* transition slide  */
+.slide {
   width: 20%;
   transition: 0.6s;
-  
 }
-.slide img{
+/* set image width and height and call animation  */
+.slide img {
   width: 100%;
   height: 100%;
   animation: autoslide 15s infinite;
-  
-  }
+}
 
 /* slide show animation */
-@keyframes autoslide{
-  0%{
+@keyframes autoslide {
+  0% {
     transform: translateX(0);
   }
-  10%{
+  10% {
     transform: translateX(0);
   }
-  25%{
+  25% {
     transform: translateX(-100%);
   }
-  50%{
+  50% {
     transform: translateX(-200%);
   }
-  75%{
+  75% {
     transform: translateX(-300%);
   }
-  90%{
+  90% {
     transform: translateX(-400%);
   }
-  100%{
+  100% {
     transform: translateX(-400%);
   }
 }
 
-.title{
-text-align: center;
-align-content: center;
-width: auto;
-margin: 0 auto;
-background-color: rgb(71, 75, 72);
-color: rgb(255, 255, 255);
-
+.title {
+  text-align: center;
+  align-content: center;
+  width: auto;
+  margin: 0 auto;
+  background-color: rgb(71, 75, 72);
+  color: rgb(255, 255, 255);
 }
 
-.title p{
+.title p {
   text-align: center;
   align-content: center;
   padding: 5;
 }
-
+/* video size  */
 iframe {
   width: 100%;
   height: 450px;
 }
-/* Style inputs */
-input[type=text], select, textarea {
+/* Style for inputs text in form*/
+input[type="text"],
+select,
+textarea {
   width: 100%;
   padding: 4px;
   border: 1px solid #ccc;
@@ -222,26 +245,26 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
-
-input[type=submit] {
-  background-color:  rgb(71, 75, 72);
+/* submit button style  */
+input[type="submit"] {
+  background-color: rgb(71, 75, 72);
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color:  rgb(58, 57, 57);
+input[type="submit"]:hover {
+  background-color: rgb(58, 57, 57);
 }
 
-/* .galery img {
-  margin-top: 8px;
-  vertical-align: middle;
+.footer img {
   width: 100%;
-} */
+  height: auto;
+  max-width: 340px;
+}
 
-/* For tablets: */
+/* For tablets view */
 @media only screen and (max-width: 768px) {
   .col {
     flex: 47%;
@@ -251,7 +274,7 @@ input[type=submit]:hover {
     letter-spacing: 0.2px;
     font-size: 12px;
   }
-  h1{
+  h1 {
     font-size: 18px;
   }
   ul {
@@ -268,16 +291,15 @@ input[type=submit]:hover {
   li {
     float: left;
   }
-  .navigation{
-    position:absolute;
+  .navigation {
+    position: absolute;
     margin-left: 8%;
     margin-top: -25px;
     align-items: center;
     justify-content: center;
     display: flex;
-    
   }
-  .bar{
+  .bar {
     width: 19px;
     height: 5px;
     display: flex;
@@ -287,7 +309,6 @@ input[type=submit]:hover {
     margin: 6px;
     cursor: pointer;
     transition: 0.4s;
-   
   }
   .column {
     -ms-flex: 50%;
@@ -299,7 +320,7 @@ input[type=submit]:hover {
     height: auto;
   }
 }
-/* For mobile phones */
+/* For mobile phones view */
 @media only screen and (max-width: 375px) {
   .col {
     flex: 100%;
@@ -309,7 +330,7 @@ input[type=submit]:hover {
     letter-spacing: 0.1px;
     font-size: 11px;
   }
-  h1{
+  h1 {
     font-size: 18px;
   }
   .nav {
@@ -317,7 +338,7 @@ input[type=submit]:hover {
   }
 
   li {
-    float: none;   
+    float: none;
     text-align: center;
   }
   li a:hover {
@@ -329,4 +350,3 @@ input[type=submit]:hover {
     max-width: 100%;
   }
 }
-
